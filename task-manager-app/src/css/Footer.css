@@ -1,0 +1,37 @@
+#footer {
+  text-align: center;
+  padding: 40px 0;
+  background-image: radial-gradient(
+    circle at top right,
+    rgb(78, 78, 78) 0%,
+    rgb(78, 78, 78) 1%,
+    rgb(72, 72, 72) 1%,
+    rgb(72, 72, 72) 10%,
+    rgb(65, 65, 65) 10%,
+    rgb(65, 65, 65) 22%,
+    rgb(59, 59, 59) 22%,
+    rgb(59, 59, 59) 23%,
+    rgb(53, 53, 53) 23%,
+    rgb(53, 53, 53) 28%,
+    rgb(46, 46, 46) 28%,
+    rgb(46, 46, 46) 37%,
+    rgb(40, 40, 40) 37%,
+    rgb(40, 40, 40) 100%
+  );
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+}
+
+#footer p {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}

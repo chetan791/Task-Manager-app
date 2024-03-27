@@ -1,0 +1,95 @@
+#first,
+#second,
+#third {
+  padding: 0 5%;
+}
+
+h1 {
+  text-align: left;
+  margin-top: 50px;
+}
+
+#logo {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  /* border: 1px solid white; */
+}
+
+#logo > img {
+  width: 100%;
+  height: 100%;
+}
+
+#second {
+  padding: 40px 5%;
+  padding-bottom: 80px;
+  margin-top: 100px;
+  background-image: radial-gradient(
+    circle at top right,
+    rgb(78, 78, 78) 0%,
+    rgb(78, 78, 78) 1%,
+    rgb(72, 72, 72) 1%,
+    rgb(72, 72, 72) 10%,
+    rgb(65, 65, 65) 10%,
+    rgb(65, 65, 65) 22%,
+    rgb(59, 59, 59) 22%,
+    rgb(59, 59, 59) 23%,
+    rgb(53, 53, 53) 23%,
+    rgb(53, 53, 53) 28%,
+    rgb(46, 46, 46) 28%,
+    rgb(46, 46, 46) 37%,
+    rgb(40, 40, 40) 37%,
+    rgb(40, 40, 40) 100%
+  );
+  color: white;
+  text-align: center;
+}
+
+#features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: left;
+  gap: 20px;
+}
+
+#features p {
+  font-size: 0.9em;
+  text-align: justify;
+  /* border: 1px solid white; */
+}
+
+#third {
+  margin-top: 100px;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+#third li {
+  font-size: medium;
+  margin: 20px 0;
+}
+
+#stayOrganizedimage {
+  width: 30%;
+  /* height: 100%; */
+  margin: auto;
+  /* border: 1px solid white; */
+}
+
+#stayOrganizedimage img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  #features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #features {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

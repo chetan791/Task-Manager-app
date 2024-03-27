@@ -1,0 +1,12 @@
+h1 {
+  text-align: left;
+}
+
+#taskpage {
+  padding: 0 5%;
+}
+
+select {
+  width: 20%;
+  height: 20%;
+}
