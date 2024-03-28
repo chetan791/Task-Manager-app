@@ -86,6 +86,9 @@ h1 {
   #features {
     grid-template-columns: repeat(2, 1fr);
   }
+  #stayOrganizedimage img {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
