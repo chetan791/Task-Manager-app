@@ -10,3 +10,4 @@ export const LOADTASKFAILURE = "LOADTASKFAILURE";
 export const ADDTASK = "ADDTASK";
 export const EDITTASK = "EDITTASK";
 export const DELETETASK = "DELETETASK";
+export const EMPTYTALLTASK = "EMPTYTALLTASK";

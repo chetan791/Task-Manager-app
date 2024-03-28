@@ -2,6 +2,7 @@ import {
   ADDTASK,
   DELETETASK,
   EDITTASK,
+  EMPTYTALLTASK,
   LOADTASK,
   LOADTASKFAILURE,
   LOADTASKSUCCESS,
@@ -51,6 +52,12 @@ export const TaskReducer = (state = InitialState, action) => {
       return {
         ...state,
         tasks: state.tasks.filter((task) => task._id !== action.payload),
+      };
+    case EMPTYTALLTASK:
+      return {
+        tasks: [],
+        isLoading: false,
+        error: "",
       };
     default:
       return state;

@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../css/Login.css";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { login } from "../Redux/AuthReducer/action";
 import { Link, useNavigate } from "react-router-dom";
 
 export const Login = () => {
   const dispatch = useDispatch();
+  const isAuth = useSelector((store) => store.auth.isAuthenticated);
 
   const navigate = useNavigate();
 
@@ -18,10 +19,13 @@ export const Login = () => {
     e.preventDefault();
     // console.log("clicked");
     dispatch(login(logindata));
-    setTimeout(() => {
-      navigate("/taskpage");
-    }, 2000);
   };
+
+  useEffect(() => {
+    if (isAuth) {
+      navigate("/taskpage");
+    }
+  }, [isAuth]);
 
   return (
     <div id="login">

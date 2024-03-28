@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import logo from "../assets/tasQ.png";
 import { Link, useNavigate } from "react-router-dom";
 import { logout } from "../Redux/AuthReducer/action";
+import { emptyAllTasks } from "../Redux/TaskReducer/action";
 
 export const Navbar = () => {
   const { isAuthenticated, name } = useSelector((store) => store.auth);
@@ -13,6 +14,7 @@ export const Navbar = () => {
 
   const handleLogout = () => {
     dispatch(logout());
+    dispatch(emptyAllTasks());
     alert("logged out successfully");
     navigate("/login");
   };

@@ -6,6 +6,7 @@ import {
   ADDTASK,
   EDITTASK,
   DELETETASK,
+  EMPTYTALLTASK,
 } from "../ActionTypes";
 
 const customAxios = axios.create({
@@ -78,4 +79,8 @@ export const deleteTask = (id, token) => async (dispatch) => {
   } catch (error) {
     console.log(error);
   }
+};
+
+export const emptyAllTasks = () => async (dispatch) => {
+  dispatch({ type: EMPTYTALLTASK });
 };
