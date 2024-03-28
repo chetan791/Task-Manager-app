@@ -22,3 +22,12 @@ Create a new branch (git checkout -b feature/my-feature).
 Make your changes and commit them (git commit -am 'Add new feature').
 Push your changes to your forked repository (git push origin feature/my-feature).
 Create a new Pull Request and describe your changes in detail.
+
+
+Below are some screenShots of the website
+![Screenshot 2024-03-28 095905](https://github.com/chetan791/Task-Manager-app/assets/118180630/16f13cee-60c2-4470-913f-85ec8a8b6b00)
+
+![Screenshot 2024-03-28 095934](https://github.com/chetan791/Task-Manager-app/assets/118180630/3f75c2c2-5c94-49e5-ba88-893e7f1130b8)
+
+![Screenshot 2024-03-28 095955](https://github.com/chetan791/Task-Manager-app/assets/118180630/270a99ff-dfb4-4142-beff-355efa545535)
+
