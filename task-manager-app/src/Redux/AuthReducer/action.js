@@ -1,5 +1,5 @@
 import axios from "axios";
-import { LOGINFAILURE, LOGINREQUEST, LOGINSUCCESS } from "../ActionTypes";
+import { LOGINFAILURE, LOGINSUCCESS, LOGOUT } from "../ActionTypes";
 
 export const login = (details) => async (dispatch) => {
   try {
@@ -26,6 +26,7 @@ export const login = (details) => async (dispatch) => {
 };
 
 export const signup = (details) => async (dispatch) => {
+  // console.log(details);
   try {
     const res = await axios.post(
       "https://task-manager-app-backend.onrender.com/user/signup",
@@ -41,4 +42,8 @@ export const signup = (details) => async (dispatch) => {
     console.log(error);
     alert(error);
   }
+};
+
+export const logout = () => async (dispatch) => {
+  dispatch({ type: LOGOUT });
 };

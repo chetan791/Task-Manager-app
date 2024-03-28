@@ -3,8 +3,7 @@ import { LOGINFAILURE, LOGINSUCCESS, LOGOUT } from "../ActionTypes";
 const InitialState = {
   isAuthenticated: false,
   name: "",
-  token:
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NjAyYjdjNmE2MWNjZTE4NDczYzFhNTYiLCJpYXQiOjE3MTE0NTk5NzcsImV4cCI6MTcxNDA1MTk3N30.vh__5683CxFZmUmvl_k9GRbfhxQ6WbZJ_RRuS1E1bhM",
+  token: "",
   error: "",
 };
 

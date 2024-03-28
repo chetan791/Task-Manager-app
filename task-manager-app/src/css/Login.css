@@ -88,7 +88,8 @@ select {
 .login input[type="email"],
 .login input[type="password"],
 textarea,
-.priority {
+.priority,
+select {
   -webkit-animation: bounce 1s;
   animation: bounce 1s;
   -webkit-appearance: none;

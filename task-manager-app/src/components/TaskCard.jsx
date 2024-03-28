@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import "../css/TaskCard.css";
 import "../css/Login.css";
 import { addTask, deleteTask } from "../Redux/TaskReducer/action";
 import { ModelForm } from "./ModelForm";
 
 export const TaskCard = ({ data, token }) => {
+  const isloaded = useSelector((store) => store.data.isLoading);
+  console.log(isloaded);
   const [showaddtask, setShowaddtask] = useState(false);
   const dispatch = useDispatch();
 
@@ -101,7 +103,7 @@ export const TaskCard = ({ data, token }) => {
           </button>
         </div>
       </div>
-      {data.length == 0 && (
+      {data.length == 0 && !isloaded && (
         <p
           style={{
             textAlign: "center",

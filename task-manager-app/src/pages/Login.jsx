@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import "../css/Login.css";
 import { useDispatch } from "react-redux";
 import { login } from "../Redux/AuthReducer/action";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Login = () => {
   const dispatch = useDispatch();
+
+  const navigate = useNavigate();
 
   const [logindata, setlogindata] = useState({
     email: "",
@@ -15,6 +18,9 @@ export const Login = () => {
     e.preventDefault();
     // console.log("clicked");
     dispatch(login(logindata));
+    setTimeout(() => {
+      navigate("/taskpage");
+    }, 2000);
   };
 
   return (
@@ -47,7 +53,9 @@ export const Login = () => {
           type="submit"
         />
 
-        <h6 style={{ textAlign: "center" }}>Don't have an account? Signup</h6>
+        <Link to={"/signup"}>
+          <h6 style={{ textAlign: "center" }}>Don't have an account? Signup</h6>
+        </Link>
       </div>
     </div>
   );

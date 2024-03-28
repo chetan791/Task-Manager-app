@@ -4,6 +4,7 @@ h1 {
 
 #taskpage {
   padding: 0 5%;
+  height: 100vh;
 }
 
 select {
