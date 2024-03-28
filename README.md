@@ -1,5 +1,6 @@
 
 ![taskq-high-resolution-logo-white-transparent](https://github.com/chetan791/Task-Manager-app/assets/118180630/adc34a69-234d-43ef-89f5-9386f6d2f81f)
+
 TaskQ - Your Personal Task Manager
 Welcome to TaskQ, a powerful task management application designed to streamline your workflow and boost productivity. TaskQ provides a user-friendly interface and a robust set of features to help you stay organized and focused on what matters most.
 
